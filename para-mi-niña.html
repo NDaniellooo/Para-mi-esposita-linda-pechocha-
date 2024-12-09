@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <style>
+        /* Estilo global */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: #f3f3f3;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            overflow: hidden; /* Evitar desplazamiento de la página */
+        }
+
+        /* Contenedor principal de la carta */
+        .container {
+            background-color: #fff;
+            width: 90%;
+            max-width: 600px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            position: relative;
+            background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Degradado en tonos morados */
+        }
+
+        /* Corazón decorativo con animación */
+        .heart {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            animation: pulse 1.5s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            left: 50px;
+            top: 0;
+        }
+
+        .heart:after {
+            top: -50px;
+            left: 0;
+        }
+
+        /* Animación de pulso del corazón */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Estilo del mensaje */
+        .message {
+            font-size: 24px;
+            line-height: 1.6;
+            color: #f1c40f;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 60px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Animación del mensaje */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilo de la firma */
+        .footer {
+            font-size: 18px;
+            margin-top: 20px;
+            font-style: italic;
+            color: #ecf0f1;
+            text-align: right;
+        }
+
+        /* Detalles de la carta */
+        .line {
+            width: 50%;
+            height: 2px;
+            background-color: #e74c3c;
+            margin: 30px auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Reproductor de música en segundo plano -->
+    <audio autoplay loop>
+        <!-- Enlace modificado para descarga directa de Google Drive -->
+        <source src="https://drive.google.com/uc?id=1wwvGkOXzcG7x8_3E6d7Tk_ORnzwG_Ms1&export=download" type="audio/mp3">
+        Tu navegador no soporta el formato de audio.
+    </audio>
+
+    <div class="container">
+        <div class="heart"></div>
+        <div class="message">
+            Te amo mucho mi niña preciosa, <br>
+            nunca olvides lo mucho que te amoo❤️ <br>
+            te amaré pase lo que pase y siempre te esperaré mi niña, <br>
+            solo no te enamores de otro chico y que no te aburras de mi, <br>
+            eres el amor de mi vida❤️ <br><br>
+            
+            Enserio te amo mucho mi amor🥺<br>
+            No te cambiaría por nada del mundo, <br>
+            me haces muy feliz mi niña, nunca cambies porfis, <br>
+            me gusta como eres. <br><br>
+            
+            Si algún día te quieres alejar de mí o te aburres de esto, <br>
+            solo dime si, mi vida. <br>
+            Te amo mucho, muaak🥺❤️
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+            Con todo mi amor, <br>
+            Tu Esposito ❤️
+        </div>
+    </div>
+
+</body>
+</html>
